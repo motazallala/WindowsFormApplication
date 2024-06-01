@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="ForceDirected" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Customers" Category="Table" Bounds="257.369384547677,42.578844876482,204.500101216634,197.880556750488" Group="Expanded" Label="Customers" UseManualLocation="True" />
+    <Node Id="Customers_CustomerID" Category="Field Primary" Bounds="359.066160060372,138.539111980976,82.8033333333333,25.96" Description="bigint" Label="CustomerID" />
+    <Node Id="Customers_Email" Category="Field Optional" Bounds="277.369407537586,82.5790137143741,50,25.96" Description="text" Label="Email" />
+    <Node Id="Customers_Name" Category="Field" Bounds="277.369386582182,138.539173016132,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Customers_Note" Category="Field Optional" Bounds="357.369392278797,82.5789526792179,50,25.96" Description="text" Label="Note" />
+    <Node Id="Customers_PhoneNumber" Category="Field Optional" Bounds="277.369384547677,194.499301800312,97.2133333333334,25.96" Description="text" Label="PhoneNumber" />
+    <Node Id="Database" Category="Database" Bounds="-57.0584553009553,-366.909598829514,1041.18140276837,627.369100395247" Group="Expanded" Label="glass12.db" UseManualLocation="True" />
+    <Node Id="Employees" Category="Table" Bounds="661.404611496733,-326.909489779279,174.996654866536,197.880358386231" Group="Expanded" Label="Employees" />
+    <Node Id="Employees_EmployeeId" Category="Field Primary" Bounds="681.404615158843,-174.989231393049,82.0166666666667,25.96" Description="bigint" Label="EmployeeId" />
+    <Node Id="Employees_Name" Category="Field" Bounds="681.404611496733,-286.909389779279,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Employees_Password" Category="Field" Bounds="681.404751877593,-230.949253365705,69.5466666666666,25.96" Description="text" Label="Password" />
+    <Node Id="Employees_RoleId" Category="Field Foreign" Bounds="763.10126636327,-286.909389779279,53.3,25.96" Description="bigint" Label="RoleId" />
+    <Node Id="OrderItems" Category="Table" Bounds="111.380519674427,-326.909711621323,190.326666666667,197.8804" Group="Expanded" Label="OrderItems" />
+    <Node Id="OrderItems_OrderId" Category="Field Foreign" Bounds="220.710519674426,-230.949471621338,60.9966666666667,25.96" Description="bigint" Label="OrderId" />
+    <Node Id="OrderItems_OrderItemId" Category="Field Primary" Bounds="131.380519674427,-174.989371621338,84.87,25.96" Description="bigint" Label="OrderItemId" />
+    <Node Id="OrderItems_PieceID" Category="Field Foreign" Bounds="131.380519674427,-230.949511621323,59.3299999999999,25.96" Description="bigint" Label="PieceID" />
+    <Node Id="OrderItems_Width" Category="Field" Bounds="131.380519674427,-286.909611621323,52.0399999999999,25.96" Description="real" Label="Width" />
+    <Node Id="OrderItems_height" Category="Field" Bounds="213.420519674427,-286.909571621338,53.8966666666667,25.96" Description="real" Label="height" />
+    <Node Id="Orders" Category="Table" Bounds="-37.0589698968269,-48.2394029997016,197.043333333333,197.8804" Group="Expanded" Label="Orders" />
+    <Node Id="Orders_CustomerID" Category="Field Foreign" Bounds="-17.0589698968269,103.680897000298,82.8033333333333,25.96" Description="bigint" Label="CustomerID" />
+    <Node Id="Orders_Notes" Category="Field" Bounds="88.5410301031732,-8.2393029996848,51.4433333333333,25.96" Description="text" Label="Notes" />
+    <Node Id="Orders_OrderDate" Category="Field" Bounds="-17.0589698968268,-8.23930299970164,75.6,25.96" Description="text" Label="OrderDate" />
+    <Node Id="Orders_OrderID" Category="Field Primary" Bounds="-17.0589698968269,47.7207970002984,62.3433333333333,25.96" Description="bigint" Label="OrderID" />
+    <Node Id="Pieces" Category="Table" Bounds="653.934717494455,-7.94689426474883,212.133370157842,197.880416811102" Group="Expanded" Label="Pieces" UseManualLocation="True" />
+    <Node Id="Pieces_CustomerID" Category="Field Foreign" Bounds="763.264751063791,32.0532165720362,82.8033333333333,25.96" Description="bigint" Label="CustomerID" />
+    <Node Id="Pieces_OrderItemId" Category="Field" Bounds="673.934725835926,88.0132919504542,84.8699999999999,25.96" Description="bigint" Label="OrderItemId" />
+    <Node Id="Pieces_PieceID" Category="Field Primary" Bounds="673.934736822255,32.0532470896143,59.3299999999999,25.96" Description="bigint" Label="PieceID" />
+    <Node Id="Pieces_Status" Category="Field" Bounds="673.934720953114,143.973409290542,52.1100000000001,25.96" Description="bigint" Label="Status" />
+    <Node Id="Pieces_Width" Category="Field" Bounds="788.804712408192,88.0132957651514,52.04,25.96" Description="real" Label="Width" />
+    <Node Id="Pieces_height" Category="Field" Bounds="756.044714035796,143.973435993423,53.8966666666665,25.96" Description="real" Label="height" />
+    <Node Id="Roles" Category="Table" Bounds="870.823983648426,-298.929478792951,93.3,141.920305895996" Group="Expanded" Label="Roles" />
+    <Node Id="Roles_Name" Category="Field" Bounds="890.823984055327,-258.929378792951,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Roles_RoleId" Category="Field Primary" Bounds="890.823983648426,-202.969272896955,53.3,25.96" Description="bigint" Label="RoleId" />
+  </Nodes>
+  <Links>
+    <Link Source="Customers" Target="Customers_CustomerID" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Email" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Name" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Note" Category="Contains" />
+    <Link Source="Customers" Target="Customers_PhoneNumber" Category="Contains" />
+    <Link Source="Database" Target="Customers" Category="Contains" />
+    <Link Source="Database" Target="Employees" Category="Contains" />
+    <Link Source="Database" Target="OrderItems" Category="Contains" />
+    <Link Source="Database" Target="Orders" Category="Contains" />
+    <Link Source="Database" Target="Pieces" Category="Contains" />
+    <Link Source="Database" Target="Roles" Category="Contains" />
+    <Link Source="Employees" Target="Employees_EmployeeId" Category="Contains" />
+    <Link Source="Employees" Target="Employees_Name" Category="Contains" />
+    <Link Source="Employees" Target="Employees_Password" Category="Contains" />
+    <Link Source="Employees" Target="Employees_RoleId" Category="Contains" />
+    <Link Source="Employees_RoleId" Target="Roles_RoleId" Category="Foreign Key" Label="FK_Employees_0_0" />
+    <Link Source="OrderItems" Target="OrderItems_OrderId" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_OrderItemId" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_PieceID" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_Width" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_height" Category="Contains" />
+    <Link Source="OrderItems_OrderId" Target="Orders_OrderID" Category="Foreign Key" Label="FK_OrderItems_1_0" />
+    <Link Source="OrderItems_PieceID" Target="Pieces_PieceID" Category="Foreign Key" Bounds="116.5563325916,-82.500924330362,31.5019248438091,201.092864735044" Label="FK_OrderItems_0_0" />
+    <Link Source="Orders" Target="Orders_CustomerID" Category="Contains" />
+    <Link Source="Orders" Target="Orders_Notes" Category="Contains" />
+    <Link Source="Orders" Target="Orders_OrderDate" Category="Contains" />
+    <Link Source="Orders" Target="Orders_OrderID" Category="Contains" />
+    <Link Source="Orders_CustomerID" Target="Customers_CustomerID" Category="Foreign Key" Label="FK_Orders_0_0" />
+    <Link Source="Pieces" Target="Pieces_CustomerID" Category="Contains" />
+    <Link Source="Pieces" Target="Pieces_OrderItemId" Category="Contains" />
+    <Link Source="Pieces" Target="Pieces_PieceID" Category="Contains" />
+    <Link Source="Pieces" Target="Pieces_Status" Category="Contains" />
+    <Link Source="Pieces" Target="Pieces_Width" Category="Contains" />
+    <Link Source="Pieces" Target="Pieces_height" Category="Contains" />
+    <Link Source="Pieces_CustomerID" Target="Customers_CustomerID" Category="Foreign Key" Label="FK_Pieces_0_0" />
+    <Link Source="Roles" Target="Roles_Name" Category="Contains" />
+    <Link Source="Roles" Target="Roles_RoleId" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="Database" />
+    <Category Id="Field" />
+    <Category Id="Field Foreign" />
+    <Category Id="Field Optional" />
+    <Category Id="Field Primary" />
+    <Category Id="Foreign Key" />
+    <Category Id="Table" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Description" Label="Description" Description="Description" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Table" ValueLabel="True">
+      <Condition Expression="HasCategory('Table')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Schema" ValueLabel="True">
+      <Condition Expression="HasCategory('Schema')" />
+      <Setter Property="Background" Value="#FF7F9169" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="True">
+      <Condition Expression="HasCategory('Field')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Database" ValueLabel="True">
+      <Condition Expression="HasCategory('Database')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>
